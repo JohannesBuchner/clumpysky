@@ -39,7 +39,7 @@ if False:
 # something about the orbits to convert to angles
 # E.g. keplerian circular orbits give only a 
 # scale conversion factor
-r = 1e-3 * (deg/(2*180))**1.5 + 1e-10
+r = 1e-3 * (deg/(2*180))**0.8 + 1e-10
 r[0] = 1e-10
 assert numpy.isfinite(r).all(), r
 plt.plot(deg, r)
